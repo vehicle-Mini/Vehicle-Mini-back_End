@@ -36,8 +36,8 @@ class vehicleService {
     // }
 
 
-    if (plateNumber && plateNumber.length !== 7) {
-      errors.plateNumberlen = "Must be exactly 7 characters";
+    if (plateNumber && plateNumber.length !== 6) {
+      errors.plateNumberlen = "Must be exactly 6 characters";
     }
 
     if (!errors.plateNumber && await Vehicle.findOne({ plateNumber })) {
@@ -103,8 +103,8 @@ class vehicleService {
     if (!region_code) errors.region_code = "Regional Code is required";
     if (!status) errors.status = "Vehicle Status required";
 
-    if (plateNumber && plateNumber.length !== 7) {
-      errors.plateNumberlen = "Must be exactly 7 characters";
+    if (plateNumber && plateNumber.length !== 6) {
+      errors.plateNumberlen = "Must be exactly 6 characters";
     }
 
 

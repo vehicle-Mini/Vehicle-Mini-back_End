@@ -10,7 +10,7 @@ const vehicleSchema = new mongoose.Schema({
     status: {type: String, required: true},
     vehicleImage: { type: String, default: '' },
 }, {
-    timestamps: true,
+    timestamps: true,      
 });
 
 const Vehicle = mongoose.model('Vehicle', vehicleSchema);
