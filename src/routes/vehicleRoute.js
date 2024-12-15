@@ -40,6 +40,10 @@ router.post("/updatevehicle/:id",
 
 router.delete("/deletevehicle/:id", vehicleController.deleteVehicle);
 
+router.get("/",   (req, res) => {
+  res.json("Back End");
+})
+
 // router.get("/getauthuser", authMiddlewareupd.authenticateToken, userController.Getauthuser);
 
 // router.post("/logout", authMiddleware.isAuthenticated, userController.Logout);
