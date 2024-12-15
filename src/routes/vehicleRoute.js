@@ -24,6 +24,7 @@ router.post(
 
 router.get("/getallvehicles",   vehicleController.getVehicles)
 
+
 router.get("/getvehiclebyid/:id", vehicleController.getVehicleById)
 
 router.post("/updatevehicle/:id",

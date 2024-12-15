@@ -23,6 +23,9 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+app.get("/",   (req, res) => {
+  res.send("Back End");
+})
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
